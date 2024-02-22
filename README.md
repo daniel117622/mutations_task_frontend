@@ -6,22 +6,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Project Structure
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This Angular website utilizes the Angular Router to manage three main routes, each serving distinct components with specific functionalities.
 
-## Running end-to-end tests
+### `/` (Main Webpage)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **GenerateForm**: A form component that captures DNA dimensions. It communicates with another component via a service to initiate grid generation.
+- **GridBuilder**: Subscribed to a service, this component dynamically constructs a grid with specified dimensions (X by Y).
+- **DnaCard**: Acts as the fundamental building block of the grid. Represents a clickable card to toggle selected bases.
+- **SubmitGenome**: Observes the current grid state, constructs a model from it, and sends a request to the backend to check for mutations. Updates a label based on the server's response.
 
-## Further help
+### `/stats` (Statistics Page)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Stats**: Displays a table populated with data fetched from the backend, detailing the current count of mutations and non-mutations.
+
+### `/list` (Information and Log List)
+
+- **List**: Presents the last 10 valid database entries, showcasing the site's logic implementation and recent activity.
+
+This structure enables efficient navigation and interaction within the website, leveraging Angular's powerful routing and component-based architecture for a responsive user experience.
