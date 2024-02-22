@@ -1,0 +1,43 @@
+<!-- list.component.html -->
+<div class="container mt-3">
+    <h2>List of last 10 requests</h2>
+    <p>The hash is computed directly from the data. This was useful to answer
+        quickly whether or not a specific dna was already on the database. If the hash does not exists
+        then the algorithm is run on the backend and then that entry is saved on the DB.
+    </p>
+    <div *ngFor="let stat of stats; let i = index">
+        <h4>Entry {{i + 1}}</h4>
+        <table class="mb-3">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hash</td>
+              <td>{{stat.hash}}</td>
+            </tr>
+            <tr>
+              <td>Data</td>
+              <td>{{stat.data | json}}</td> <!-- Using json pipe for array data -->
+            </tr>
+            <tr>
+              <td>Result</td>
+              <td>{{stat.result}}</td>
+            </tr>
+            <tr>
+              <td>Date Initiated</td>
+              <td>{{stat.date_initiated | date:'medium'}}</td> <!-- Format as date -->
+            </tr>
+            <tr>
+              <td>Date Completed</td>
+              <td>{{stat.date_completed | date:'medium'}}</td> <!-- Format as date -->
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+
+  

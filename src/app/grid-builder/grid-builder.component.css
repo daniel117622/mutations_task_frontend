@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem; /* Adjust the gap as needed */
-    --X :8;
+    --X : 8;
     width: calc(var(--X) * 4rem + (var(--X) - 1) * 0.5rem);
 }
 

@@ -1,0 +1,17 @@
+.box {
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    width: 4rem; /* Fixed width */
+    height: 4rem; /* Fixed height */
+    padding: 0; /* No padding */
+    border: 2px solid #000;
+    font-family: Calibri, sans-serif;
+    font-size: 1.625rem; 
+
+  }
+
+.base-A { background-color: #ffcccc; } /* Light red for A */
+.base-C { background-color: #ccffcc; } /* Light green for C */
+.base-G { background-color: #ccccff; } /* Light blue for G */
+.base-T { background-color: #ffffcc; } /* Light yellow for T */

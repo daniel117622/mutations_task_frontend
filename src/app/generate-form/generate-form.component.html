@@ -1,0 +1,19 @@
+<div class="container mt-3">
+  <table class="table">
+    <tr>
+      <td class="input-cell">
+        <!-- Label for X input -->
+        <label for="xInput" class="form-label">Bases per string</label>
+        <input [(ngModel)]="x" type="number" class="form-control mb-3 shorter-input" id="xInput" placeholder="Enter X" name="x">
+      </td>
+      <td class="input-cell">
+        <!-- Label for Y input -->
+        <label for="yInput" class="form-label">Number of bases</label>
+        <input [(ngModel)]="y" type="number" class="form-control mb-3 shorter-input" id="yInput" placeholder="Enter Y" name="y">
+      </td>
+      <td class="button-cell">
+        <button class="btn longer-button" (click)="generate()">Generate bases</button>
+      </td>
+    </tr>
+  </table>
+</div>

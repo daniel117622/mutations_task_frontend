@@ -1,0 +1,18 @@
+/* Adjustments for the input fields to be shorter */
+.shorter-input {
+    width: 20%; /* Make input fill the td, but limit td width */
+  }
+  
+  .input-cell {
+    width: 20%; /* Adjust the width as needed */
+  }
+  
+  /* Adjustments for the button to be longer */
+  .longer-button {
+    width: 100%; /* Make the button fill the td */
+  }
+  
+  .button-cell {
+    width: 60%; /* Adjust the width as needed */
+  }
+  

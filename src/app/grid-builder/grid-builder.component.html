@@ -1,0 +1,3 @@
+<div id="genome" class="flex-container" [style.--X]="data.x" [ngStyle]="{'width': calcWidth(data.x)}">
+    <app-dna-card *ngFor="let card of gridArray; let i = index"></app-dna-card>
+</div>

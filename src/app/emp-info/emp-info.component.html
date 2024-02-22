@@ -1,0 +1,24 @@
+<div class="card mb-3 ">
+    <div class="card-body">
+        <button type="button" class="btn btn-info mb-3" name="button" (click)="getInfoFromServiceClass1()">Employee 1</button>
+        <ul class="list-group w-50 mx-auto">
+            <li *ngFor="let info of infoReceived1" class="list-group-item">{{info}}</li>
+        </ul>
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-body">
+        <button type="button" class="btn btn-info mb-3" name="button" (click)="getInfoFromServiceClass2()">Employee 2</button>
+        <ul class="list-group w-50 mx-auto">
+            <li *ngFor="let info of infoReceived2" class="list-group-item">{{info}}</li>
+        </ul>
+    </div>
+</div>
+<div class="card mb-3">
+    <div class="card-body">
+        <button type="button" class="btn btn-info mb-3" name="button" (click)="getInfoFromServiceClass3()">Employee 3</button>
+        <ul class="list-group w-50 mx-auto">
+            <li *ngFor="let info of infoReceived3" class="list-group-item">{{info}}</li>
+        </ul>
+    </div>
+</div>
